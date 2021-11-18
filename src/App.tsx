@@ -1,7 +1,11 @@
+import GlobalStyles from './GlobalStyles';
+import Hero from './components/Hero/Hero';
+
 const App = () => {
   return (
-    <div className="App">
-      
+    <div>
+      <GlobalStyles />
+      <Hero />
     </div>
   );
 }
