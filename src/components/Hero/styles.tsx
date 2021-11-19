@@ -34,10 +34,12 @@ export const Text = styled.p`
     margin-bottom: 1rem;
 `;
 
-export const Arrow = styled(ArrowDown)`
+export const Arrow = styled(ArrowDown)<{ isScrollTop: boolean }>`
     position: absolute;
     right: 50%;
     bottom: 1rem;
     color: #8E8E8E;
     height: 1.5rem;
+    opacity: ${({ isScrollTop }) => isScrollTop ? '100%' : '0%'};
+    transition: opacity 0.5s linear;
 `;

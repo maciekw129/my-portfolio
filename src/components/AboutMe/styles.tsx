@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const AboutMeContainer = styled.div`
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 5rem 0;
 `;
 
 export const Content = styled.div`
