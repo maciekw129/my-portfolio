@@ -3,15 +3,12 @@ import styled from 'styled-components/macro';
 export const AboutMeContainer = styled.div`
     display: flex;
     align-items: center;
-    margin: 5rem 0;
-`;
-
-export const Content = styled.div`
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    margin: 5rem 0;
 
     @media only screen and (min-width: 750px){
+        height: 100vh;
+        margin: 0;
         flex-direction: row;
         align-items: flex-start;
     }
@@ -22,13 +19,8 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-grow: 0;
 
     @media only screen and (min-width: 750px) {
-        padding: 0 5rem;
-    }
-
-    @media only screen and (min-width: 900px) {
         padding: 0 5rem;
     }
 
@@ -59,6 +51,5 @@ export const Photo = styled.img`
 
     @media only screen and (min-width: 750px) {
         width: 45%;
-        margin-top: 0;
     }
 `;

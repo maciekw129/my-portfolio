@@ -37,7 +37,7 @@ export const Text = styled.p`
 export const Arrow = styled(ArrowDown)<{ isScrollTop: boolean }>`
     position: absolute;
     right: 50%;
-    bottom: 1rem;
+    bottom: 4rem;
     color: #8E8E8E;
     height: 1.5rem;
     opacity: ${({ isScrollTop }) => isScrollTop ? '100%' : '0%'};
