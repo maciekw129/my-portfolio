@@ -18,11 +18,11 @@ const Project = ({ project }: projectObject) => {
                 <Title>{project.title}</Title>
                 <p>{project.description}</p>
             </TextContainer>
-            <Image src={project.image} />
             <ButtonsContainer>
                     <Button>code</Button>
                     <Button>live</Button>
-                </ButtonsContainer>
+            </ButtonsContainer>
+            <Image src={project.image} />
         </ProjectContainer>
     )
 };

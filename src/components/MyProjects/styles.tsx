@@ -6,12 +6,12 @@ export const MyProjectsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
-    padding: 0 1.5rem;
+    padding: 0 10rem;
 
     @media only screen and (min-width: 750px) {
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
+        padding: 0 7rem;
     }
 `;
 
@@ -19,10 +19,12 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 
     @media only screen and (min-width: 750px) {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: flex-start;
     }
 `;
 
@@ -39,5 +41,5 @@ export const ProjectItem = styled.li`
     color: #F1F3F8;
     text-decoration: underline;
     cursor: pointer;
-
+    padding: 0.25rem 0;
 `;

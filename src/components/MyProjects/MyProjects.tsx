@@ -15,7 +15,7 @@ const MyProjects = () => {
 
     return(
         <MyProjectsContainer>
-                <SectionTitle width="auto"><span>2. </span>My Projects</SectionTitle>
+                <SectionTitle align='left'><span>2. </span>My Projects</SectionTitle>
                 <Content>
                     <ProjectsList>
                         <ProjectItem onClick={() => setProject(projects.cocktailsApp)}>Cocktail App</ProjectItem>

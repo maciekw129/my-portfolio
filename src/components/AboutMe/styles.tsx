@@ -7,10 +7,10 @@ export const AboutMeContainer = styled.div`
     margin: 5rem 0;
 
     @media only screen and (min-width: 750px){
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
     }
 `;
 

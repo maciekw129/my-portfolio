@@ -6,8 +6,9 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     @media only screen and (min-width: 750px) {
-        width: 30%;
+        width: 50%;
     }
 `;
 
@@ -25,6 +26,7 @@ export const Title = styled.h3`
 
 export const Image = styled.img`
     width: 100%;
+    border-radius: 0 0 5px 5px;
 `;
 
 export const ButtonsContainer = styled.div`
@@ -34,5 +36,5 @@ export const ButtonsContainer = styled.div`
     padding: 0 1rem;
     border: 1px solid #8E8E8E;
     border-top: 0;
-    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
 `;

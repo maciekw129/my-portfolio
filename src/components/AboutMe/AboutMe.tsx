@@ -13,7 +13,7 @@ const AboutMe = () => {
     return(
         <AboutMeContainer>
                 <TextContainer>
-                    <SectionTitle width='auto'><span>1. </span>About Me</SectionTitle>
+                    <SectionTitle align='left'><span>1. </span>About Me</SectionTitle>
                     <p>I'm 22 years old student of gastronomy and hospitality Warsaw (Poland). Because of the gastronomy lockdown due to the covid-19 pandemic, I decided to change my carrier path and try myself in coding.</p>
                     <ul>
                         <ListTitle>In that time I learned this technologies:</ListTitle>
