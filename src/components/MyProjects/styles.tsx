@@ -6,7 +6,12 @@ export const MyProjectsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10rem;
+    padding: 0 1rem;
+    margin-bottom: 10rem;
+
+    @media only screen and (min-width: 450px) {
+        padding: 0 3rem;
+    }
 
     @media only screen and (min-width: 750px) {
         min-height: 100vh;
@@ -19,12 +24,12 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
 
     @media only screen and (min-width: 750px) {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
+        margin-top: 2rem;
     }
 `;
 

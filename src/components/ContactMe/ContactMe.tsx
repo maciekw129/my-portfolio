@@ -4,19 +4,23 @@ import {
     InputEmail,
     InputText,
     FormContainer,
-    InputSubmit,
 } from './styles';
-import { useState } from 'react'
+import React, { useState } from 'react'
+import Button from '../Button/Button';
 
 const ContactMe = () => {
 
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
 
+    const sendEmail = (e: React.ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    }
+
     return(
         <ContactMeContainer>
             <SectionTitle align='center'><span>3.</span> Contact Me!</SectionTitle>
-            <FormContainer>
+            <FormContainer onSubmit={sendEmail}>
                 <InputEmail
                     type='email'
                     placeholder='e-mail'
@@ -25,13 +29,13 @@ const ContactMe = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <InputText
-                    type='text'
                     placeholder='Enter your message here...'
                     name='text'
                     value={text}
+                    rows={15}
                     onChange={(e) => setText(e.target.value)}
                 />
-                <InputSubmit />
+                <Button type='submit'>Send</Button>
             </FormContainer>
         </ContactMeContainer>
     )

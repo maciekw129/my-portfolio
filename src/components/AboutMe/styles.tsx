@@ -4,13 +4,14 @@ export const AboutMeContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 5rem 0;
+    margin-bottom: 10rem;
 
     @media only screen and (min-width: 750px){
         min-height: 100vh;
         margin: 0;
         flex-direction: row;
         align-items: center;
+        margin: 0;
     }
 `;
 

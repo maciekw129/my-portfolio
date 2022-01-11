@@ -6,10 +6,11 @@ export const ContactMeContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 35%;
+    padding: 0 10%;
 
     @media only screen and (min-width: 750px) {
         min-height: 100vh;
+        padding: 0 35%;
     }
 `;
 
@@ -26,18 +27,15 @@ export const InputEmail = styled.input`
     border-radius: 50px;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
+    width: 125%;
 `;
 
-export const InputText = styled.input`
+export const InputText = styled.textarea`
     background: none;
     border: 1px solid #8E8E8E;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
-    width: 150%;
-    height: 300px;
-`;
-
-export const InputSubmit = styled.input`
-
+    width: 125%;
+    resize: none;
 `;
