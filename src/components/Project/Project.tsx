@@ -20,8 +20,8 @@ const Project = ({ project, isVisible }: projectObject) => {
                 <p>{project.description}</p>
             </TextContainer>
             <ButtonsContainer>
-                    <Button>code</Button>
-                    <Button>live</Button>
+                    <a href={project.code} target="_blank"><Button>code</Button></a>
+                    <a href={project.live} target="_blank"><Button>live</Button></a>
             </ButtonsContainer>
             <Image src={project.image} />
         </ProjectContainer>

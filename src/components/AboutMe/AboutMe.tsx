@@ -14,7 +14,7 @@ const AboutMe = () => {
         <AboutMeContainer>
                 <TextContainer>
                     <SectionTitle align='left'><span>1. </span>About Me</SectionTitle>
-                    <p>I'm 22 years old student of gastronomy and hospitality Warsaw (Poland). Because of the gastronomy lockdown due to the covid-19 pandemic, I decided to change my carrier path and try myself in coding.</p>
+                    <p>I'm 22 years old student of gastronomy and hotel managment from Warsaw (Poland). Because of the gastronomy lockdown due to the covid-19 pandemic I decided to change my carrier path and try myself in coding.</p>
                     <ul>
                         <ListTitle>In that time I learned this technologies:</ListTitle>
                         <Skill>HTML5</Skill>

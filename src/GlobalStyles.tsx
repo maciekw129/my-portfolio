@@ -6,11 +6,11 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
-        //ss
     }
 
     body {
         background-color: #430C15;
+        border: 8px solid #8E8E8E;
     }
 
     p {
@@ -25,6 +25,11 @@ const GlobalStyles = createGlobalStyle`
     ul {
         list-style-type: none;
     }
+
+    a {
+        color: black;
+    }
+
 `;
 
 export default GlobalStyles;

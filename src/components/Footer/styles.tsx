@@ -2,11 +2,24 @@ import styled from 'styled-components/macro';
 
 export const FooterContainer = styled.div`
     display: flex;
-    width: 100%;
-    background-color: #F1F3F8;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    width: 100%;
+    background-color: #8E8E8E;
+    padding: 1rem 0;
+    
+    & h5 {
+        color: black;
+    }
+`;
+
+export const MediaIcons = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1rem;
 
     & svg {
         width: 2rem;
