@@ -44,7 +44,11 @@ export const ProjectsList = styled.ul`
 
 export const ProjectItem = styled.li`
     color: #F1F3F8;
-    text-decoration: underline;
     cursor: pointer;
     padding: 0.25rem 0;
+
+    &::before {
+        color: #F6A401;
+        content: '> ';
+    }
 `;

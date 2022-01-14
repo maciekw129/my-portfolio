@@ -1,11 +1,13 @@
 import styled from 'styled-components/macro';
 
-export const ProjectContainer = styled.div`
+export const ProjectContainer = styled.div<{isVisible: boolean}>`
     width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.4s ease-in;
+    opacity: ${({isVisible}) => isVisible ? '100%' : '0%'};
 
     @media only screen and (min-width: 750px) {
         width: 50%;

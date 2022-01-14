@@ -8,12 +8,13 @@ import {
 import Button from '../Button/Button';
 
 interface projectObject {
-    [key: string]: any
+    project: { [key: string]: any },
+    isVisible: boolean,
 }
 
-const Project = ({ project }: projectObject) => {
+const Project = ({ project, isVisible }: projectObject) => {
     return(
-        <ProjectContainer>
+        <ProjectContainer isVisible={isVisible}>
             <TextContainer>
                 <Title>{project.title}</Title>
                 <p>{project.description}</p>

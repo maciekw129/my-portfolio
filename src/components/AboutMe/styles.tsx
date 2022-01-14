@@ -33,7 +33,7 @@ export const TextContainer = styled.div`
 export const ListTitle = styled.p`
     margin-bottom: 0.25rem;
     color: #F1F3F8;
-    text-decoration: underline;
+    //text-decoration: underline;
 `;
 
 export const Skill = styled.li`
