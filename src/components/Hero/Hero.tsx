@@ -7,6 +7,7 @@ import {
 } from './styles';
 import Button from '../Button/Button';
 import { useEffect, useState } from 'react';
+import ScrollArrow from '../ScrollArrow/ScrollArrow';
 
 const Hero = () => {
 
@@ -25,6 +26,7 @@ const Hero = () => {
                 <Text>Junior frontend developer from Poland</Text>
                 <Button>Download Resume</Button>
                 <Arrow isScrollTop={isScrollTop} />
+                <ScrollArrow isScrollTop={isScrollTop} />
             </HeroContent>
         </HeroContainer>
     );
