@@ -24,8 +24,8 @@ const Project = ({ project, isVisible }: projectObject) => {
                 <p>{isEnglish ? project.englishDescription : project.polishDescription}</p>
             </TextContainer>
             <ButtonsContainer>
-                    <Button>{isEnglish ? 'code' : 'kod'}</Button>
-                    <Button>{isEnglish ? 'live' : 'strona'}</Button>
+                    <a href={project.code} target="_blank"><Button>{isEnglish ? 'code' : 'kod'}</Button></a>
+                    <a href={project.live} target="_blank"><Button>{isEnglish ? 'live' : 'strona'}</Button></a>
             </ButtonsContainer>
             <Image src={project.image} />
         </ProjectContainer>

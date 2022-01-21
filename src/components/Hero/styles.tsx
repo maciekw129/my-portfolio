@@ -3,7 +3,7 @@ import { ArrowDown } from '@styled-icons/bootstrap/ArrowDown';
 
 export const HeroContainer = styled.div`
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

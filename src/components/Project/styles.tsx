@@ -20,7 +20,7 @@ export const TextContainer = styled.div`
     border-radius: 5px 5px 0 0;
     padding: 1rem;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
 `;
 
 export const Title = styled.h3`

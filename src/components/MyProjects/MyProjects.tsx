@@ -42,7 +42,7 @@ const MyProjects = () => {
 
     return(
         <MyProjectsContainer>
-                <SectionTitle align='left'><span>2. </span>My Projects</SectionTitle>
+                <SectionTitle align='left'><span>2. </span>{language.myProjectsHeader}</SectionTitle>
                 <Content>
                     <ProjectsList ref={projectsRef}>
                         <ProjectItem onClick={() => setProjectNumber(0)}><span></span>Cocktail App</ProjectItem>

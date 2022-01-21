@@ -9,18 +9,21 @@ const languages = {
         myProjectsHeader: 'My projects',
         rockPaperScissorsDescription: 'This app is the copy od classic rock, paper and scissors game.',
         cocktailsAppDescription: 'App where You can search for a specific cocktail, and check its recipe.',
-
+        contactMeHeader: 'Contact me!',
+        contactTextbox: 'Enter your message here...',
     },
     polish: {
         heroHeader: <>Witaj!<br/>Jestem <span>Maciej Walecki.</span></>,
         heroText: 'Junior frontend developer.',
         cvButton: 'Pobierz CV',
         aboutMeHeader: 'O mnie',
-        aboutMeText: `Jestem 22 letnim studentem gastronomii i hotelarstwa z Warszawy. Z powodu lockdown'u lokali gastronomii przez pandemię Covid-19 zdecydowałem zmienić moją ścieżkę zawodową i zacząć uczyć się pisać strony internetowe.`,
+        aboutMeText: `Jestem 22 letnim studentem gastronomii i hotelarstwa z Warszawy. Z powodu lockdown'u gastronomii przez pandemię zdecydowałem się zmienić moją ścieżkę zawodową i zacząć uczyć się pisać strony internetowe.`,
         skillsText: 'Przez ten czas nauczyłem się następujących technologii:',
         myProjectsHeader: 'Moje projekty',
         rockPaperScissorsDescription: 'Aplikacja będąca odwzorowaniem klasycznej gry w papier, kamień, nożyce.',
         cocktailsAppDescription: 'Aplikacja w której można wyszukać konkretny koktajl, oraz zobaczyć na niego przepis.',
+        contactMeHeader: 'Skontaktuj się ze mną!',
+        contactTextbox: 'Tutaj wpisz Twoją wiadomość...',
     },
 };
 

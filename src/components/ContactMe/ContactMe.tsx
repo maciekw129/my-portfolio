@@ -7,11 +7,14 @@ import {
 } from './styles';
 import React, { useState } from 'react'
 import Button from '../Button/Button';
+import { LanguageContext } from '../../utilities/languageContext'
+import { useContext } from 'react';
 
 const ContactMe = () => {
 
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
+    const { language } = useContext(LanguageContext);
 
     const sendEmail = (e: React.ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -19,7 +22,7 @@ const ContactMe = () => {
 
     return(
         <ContactMeContainer>
-            <SectionTitle align='center'><span>3.</span> Contact Me!</SectionTitle>
+            <SectionTitle align='center'><span>3.</span> {language.contactMeHeader}</SectionTitle>
             <FormContainer onSubmit={sendEmail}>
                 <InputEmail
                     type='email'
@@ -29,7 +32,7 @@ const ContactMe = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <InputText
-                    placeholder='Enter your message here...'
+                    placeholder={language.contactTextbox}
                     name='text'
                     value={text}
                     rows={15}

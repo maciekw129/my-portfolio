@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 100%;
 
     @media only screen and (min-width: 750px) {
         padding: 0 5rem;
@@ -33,7 +34,6 @@ export const TextContainer = styled.div`
 export const ListTitle = styled.p`
     margin-bottom: 0.25rem;
     color: #F1F3F8;
-    //text-decoration: underline;
 `;
 
 export const Skill = styled.li`
