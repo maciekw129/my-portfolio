@@ -10,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background-color: #430C15;
-        //border: 8px solid #8E8E8E;
         border-top: none;
     }
 
@@ -30,7 +29,6 @@ const GlobalStyles = createGlobalStyle`
     a {
         color: black;
     }
-
 `;
 
 export default GlobalStyles;
