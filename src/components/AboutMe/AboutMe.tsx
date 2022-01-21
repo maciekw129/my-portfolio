@@ -8,15 +8,20 @@ import {
 import SectionTitle from '../SectionTitle/SectionTitle';
 import AboutMePhoto from '../../images/AboutMePhoto.jpg';
 import SkillsIcons from '../SkillsIcons/SkillsIcons';
+import { LanguageContext } from '../../utilities/languageContext'
+import { useContext } from 'react';
 
 const AboutMe = () => {
+
+    const { language } = useContext(LanguageContext)
+
     return(
         <AboutMeContainer>
                 <TextContainer>
-                    <SectionTitle align='left'><span>1. </span>About Me</SectionTitle>
-                    <p>I'm 22 years old student of gastronomy and hotel managment from Warsaw (Poland). Because of the gastronomy lockdown due to the covid-19 pandemic I decided to change my carrier path and try myself in coding.</p>
+                    <SectionTitle align='left'><span>1. </span>{language.aboutMeHeader}</SectionTitle>
+                    <p>{language.aboutMeText}</p>
                     <ul>
-                        <ListTitle>In that time I learned this technologies:</ListTitle>
+                        <ListTitle>{language.skillsText}</ListTitle>
                         <Skill>HTML5</Skill>
                         <Skill>CSS3, SASS, styled-components</Skill>
                         <Skill>JavaScript, TypeScript</Skill>
