@@ -7,8 +7,15 @@ import {
 import SectionTitle from '../SectionTitle/SectionTitle';
 import projects from '../../utilities/projects';
 import Project from '../Project/Project';
-import { useRef, useState, useEffect, useContext } from 'react';
-import { LanguageContext } from '../../utilities/languageContext';
+import { useRef, useState, useEffect, JSXElementConstructor } from 'react';
+
+type ProjectObject = {
+    title: string; 
+    description: string; 
+    live: string; 
+    code: string; 
+    image: string
+}
 
 const MyProjects = () => {
 
@@ -16,7 +23,6 @@ const MyProjects = () => {
     const [projectNumber, setProjectNumber] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
     const projectsRef = useRef<HTMLUListElement>(null);
-    const { language } = useContext(LanguageContext);
 
     useEffect(() => {
         setIsVisible(false);
@@ -29,10 +35,10 @@ const MyProjects = () => {
         };
         setTimeout(() => {
             if(projectNumber === 0) {
-                setProject(projects.cocktailsApp);
+                setProject(projects.cocktailsApp)
             }
             else if(projectNumber === 1) {
-                setProject(projects.rockPaperScissors);
+                setProject(projects.rockPaperScissors)
             };
         }, 400)
         setTimeout(() => {

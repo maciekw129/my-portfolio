@@ -6,47 +6,13 @@ import {
     TextContainer,
 } from './styles';
 import Button from '../Button/Button';
-import { useContext, useState, useEffect } from 'react';
-import { LanguageContext } from '../../utilities/languageContext';
-import cocktailProjectImage from '../../images/cocktailProjectImage.jpg';
-import rockPaperScissorsImage from '../../images/rockPaperScissorsProjectImage.jpg';
 
-interface props {
-    projectNumber: number,
+interface projectObject {
+    project: { [key: string]: any },
     isVisible: boolean,
-};
-
-type projectObject = {
-    [key: string]: string;
 }
 
-const Project = ({ projectNumber, isVisible }: props) => {
-
-    const { language } = useContext(LanguageContext);
-    const [project, setProject] = useState<projectObject>({});
-
-    useEffect(() => {
-        setTimeout(() => {
-            if(projectNumber === 0) {
-                setProject({
-                    title: 'Cocktails app',
-                    description: language.cocktailsAppDescription,
-                    live: 'https://cocktails-app-maciekw129.netlify.app/',
-                    code: 'https://github.com/maciekw129/cocktails',
-                    image: cocktailProjectImage,
-                })
-            } else if(projectNumber === 1) {
-                const description = language.rockPaperScissorsDescription;
-                setProject({
-                    title: 'Rock, Paper, Scissors',
-                    description: description,
-                    live: 'https://paper-rock-scissors-maciekw129.netlify.app/',
-                    code: 'https://github.com/maciekw129/rock_paper_scissors',
-                    image: rockPaperScissorsImage,
-                })
-            }}, 400);
-        }, [projectNumber, language]);
-
+const Project = ({ project, isVisible }: projectObject) => {
     return(
         <ProjectContainer isVisible={isVisible}>
             <TextContainer>

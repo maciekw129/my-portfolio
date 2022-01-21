@@ -11,14 +11,14 @@ import { Adobexd } from '@styled-icons/simple-icons/Adobexd';
 const SkillsIcons = () => {
     return(
         <IconsContainer>
-            <Html5 title='HTML5' />
-            <Css3 title='CSS3' />
-            <Sass title='SASS' />
-            <Javascript title='JavaScript' />
-            <Typescript title='TypeScript' />
-            <ReactLogo title='React' />
-            <Adobexd title='Adobe Xd' />
-            <GitSquare title='Git' />
+            <Html5 />
+            <Css3 />
+            <Sass />
+            <Javascript />
+            <Typescript />
+            <ReactLogo />
+            <Adobexd />
+            <GitSquare />
         </IconsContainer>
     )
 }
