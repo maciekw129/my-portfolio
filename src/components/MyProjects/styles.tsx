@@ -27,9 +27,10 @@ export const Content = styled.div`
 
     @media only screen and (min-width: 750px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         margin-top: 2rem;
+        width: 90%;
     }
 `;
 
@@ -38,7 +39,7 @@ export const ProjectsList = styled.ul`
     margin: 1rem 0;
 
     @media only screen and (min-width: 750px) {
-        width: auto;
+        width: 40%;
     }
 `;
 

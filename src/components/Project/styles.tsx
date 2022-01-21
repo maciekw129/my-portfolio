@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 
 export const ProjectContainer = styled.div<{isVisible: boolean}>`
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div<{isVisible: boolean}>`
     opacity: ${({isVisible}) => isVisible ? '100%' : '0%'};
 
     @media only screen and (min-width: 750px) {
-        width: 50%;
+        width: 60%;
     }
 `;
 
@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
     border-radius: 5px 5px 0 0;
     padding: 1rem;
     width: 100%;
+    height: 120px;
 `;
 
 export const Title = styled.h3`
