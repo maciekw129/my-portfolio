@@ -6,12 +6,14 @@ import {
     Arrow,
 } from './styles';
 import Button from '../Button/Button';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import ScrollArrow from '../ScrollArrow/ScrollArrow';
+import { LanguageContext } from '../../utilities/languageContext';
 
 const Hero = () => {
 
     const [isScrollTop, setIsScrollTop] = useState(true);
+    const { language } = useContext(LanguageContext);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -22,9 +24,9 @@ const Hero = () => {
     return(
         <HeroContainer>
             <HeroContent>
-                <HeroHeader>Hello!<br/>I am <span>Maciej Walecki.</span></HeroHeader>
-                <Text>Junior frontend developer from Poland</Text>
-                <Button>Download Resume</Button>
+                <HeroHeader>{language.heroHeader}</HeroHeader>
+                <Text>{language.heroText}</Text>
+                <Button>{language.cvButton}</Button>
                 <Arrow isScrollTop={isScrollTop} />
                 <ScrollArrow isScrollTop={isScrollTop} />
             </HeroContent>

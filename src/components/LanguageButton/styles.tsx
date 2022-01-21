@@ -13,6 +13,7 @@ export const LanguageButtonContainer = styled.div`
         width: 2rem;
         color: #8E8E8E;
         cursor: pointer;
+        
     }
 `;
 

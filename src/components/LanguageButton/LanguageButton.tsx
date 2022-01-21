@@ -2,19 +2,20 @@ import {
     LanguageButtonContainer,
 } from './styles';
 import { Language } from '@styled-icons/material-outlined/Language';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { LanguageContext } from '../../utilities/languageContext';
 
 const LanguageButton = () => {
 
-    const [isEnglish, setIsEnglish] = useState(true);
+    const { isEnglish, setIsEnglish } = useContext(LanguageContext);
 
     const handleClick = () => {
-        setIsEnglish(!isEnglish)
+        setIsEnglish(!isEnglish);
     }
 
     return(
         <LanguageButtonContainer onClick={handleClick}>
-            <Language />
+            <Language title={isEnglish ? "Kliknij aby ustawić język na polski." : "Click to set the English language."} />
             <p>{isEnglish ? 'EN' : 'PL'}</p>
         </LanguageButtonContainer>
     )
