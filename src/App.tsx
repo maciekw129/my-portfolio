@@ -6,19 +6,30 @@ import MyProjects from './components/MyProjects/MyProjects';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
 import Provider from './utilities/languageContext';
+import FirstPage from './components/FirstPage/FirstPage';
+import { useState } from 'react';
 
 const App = () => {
-  return (
-    <Provider>
-      <GlobalStyles />
-      <Header />
-      <Hero />
-      <AboutMe />
-      <MyProjects />
-      <ContactMe />
-      <Footer />
-    </Provider>
-  );
+
+  const [isLanguageChosen, setIsLanguageChosen] = useState(true);
+
+  if(isLanguageChosen) {
+    return (
+      <Provider>
+        <GlobalStyles />
+        <Header />
+        <Hero />
+        <AboutMe />
+        <MyProjects />
+        <ContactMe />
+        <Footer />
+      </Provider>
+    );
+  } else {
+    return (
+      <FirstPage />
+    )
+  }
 }
 
 export default App;
