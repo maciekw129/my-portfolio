@@ -1,13 +1,25 @@
 import {
-    FirstPageContainer,
+    AnimationContainer,
 } from './styles';
 
 const FirstPage = () => {
     return(
-        <FirstPageContainer>
-            <h1>SFAFFA</h1>
-        </FirstPageContainer>
+        <AnimationContainer>
+            <div className="animation">
+                <div className="left">
+                    <div className='circle'>
+                        <div className='mask'></div>
+                    </div>
+                </div>
+                <div className="right">
+                    <div className='circle'>
+                        <div className='mask'></div>
+                    </div>
+                </div>
+            </div>
+            <div className="middleCircle">M</div>
+        </AnimationContainer>
     )
 };
 
-export default FirstPageContainer;
+export default FirstPage;

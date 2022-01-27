@@ -7,29 +7,33 @@ import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
 import Provider from './utilities/languageContext';
 import FirstPage from './components/FirstPage/FirstPage';
+import AnimationContainer from './components/AnimationContainer/AnimationContainer';
 import { useState } from 'react';
 
 const App = () => {
 
-  const [isLanguageChosen, setIsLanguageChosen] = useState(true);
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
-  if(isLanguageChosen) {
+  const handleClick = () => {
+    setIsAnimationComplete(!isAnimationComplete);
+  }
+
     return (
       <Provider>
         <GlobalStyles />
         <Header />
-        <Hero />
-        <AboutMe />
-        <MyProjects />
-        <ContactMe />
-        <Footer />
+        {isAnimationComplete ?
+        <AnimationContainer>
+          <Hero />
+          <AboutMe />
+          <MyProjects />
+          <ContactMe />
+          <Footer />
+        </AnimationContainer>
+        : <FirstPage />
+        }
       </Provider>
     );
-  } else {
-    return (
-      <FirstPage />
-    )
-  }
-}
+} 
 
 export default App;
