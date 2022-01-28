@@ -25,7 +25,8 @@ export const AnimationContainer = styled.div`
     }
 
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
