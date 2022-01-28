@@ -8,7 +8,7 @@ export const LanguageButtonContainer = styled.div`
 
     & svg {
         width: 2rem;
-        color: #8E8E8E;
+        color: #ffffffca;
         cursor: pointer;
         
     }

@@ -59,7 +59,6 @@ const ContactMe = () => {
                     placeholder={language.contactTextbox}
                     name='message'
                     value={message}
-                    rows={15}
                     onChange={(e) => setMessage(e.target.value)}
                 />
                 <TextContainer>

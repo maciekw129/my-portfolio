@@ -8,7 +8,7 @@ export const IconsContainer = styled.div`
 
     & svg {
         height: 1.5rem;
-        color: #dddddd;
+        color: #ffffffca;
     }
 
     @media only screen and (min-width: 1400px) {

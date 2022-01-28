@@ -24,6 +24,6 @@ export const MediaIcons = styled.div`
         width: 1.5rem;
         margin: 0 1rem;
         cursor: pointer;
-        color: #8E8E8E;
+        color: #ffffffca;
     }
 `;

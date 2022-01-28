@@ -11,7 +11,6 @@ export const FooterContainer = styled.div`
     
     & p {
         color: black;
-        font-weight: bold;
     }
 `;
 
