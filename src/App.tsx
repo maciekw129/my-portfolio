@@ -14,11 +14,13 @@ const App = () => {
 
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
-  useEffect(() => {
+  const toggleIsAnimationComplete = () => {
     setTimeout(() => {
-      setIsAnimationComplete(!isAnimationComplete);
-    }, 3000)
-  }, [])
+      setIsAnimationComplete(true);
+    }, 3000);
+  }
+
+  useEffect(toggleIsAnimationComplete, []);
 
     return (
       <Provider>

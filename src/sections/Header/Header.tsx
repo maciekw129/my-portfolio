@@ -22,9 +22,9 @@ const Header = () => {
         <HeaderContainer isHeaderTop={isHeaderTop}>
             <LanguageButton />
             <MediaIcons>
-                <a href="https://www.facebook.com/maciek.walecki.7" target="_blank"><Facebook /></a>
-                <a href="https://www.linkedin.com/in/maciej-walecki-51b76a1b7/" target="_blank"><Linkedin /></a>
-                <a href="https://github.com/maciekw129" target="_blank"><Github /></a>
+                <a href="https://www.facebook.com/maciek.walecki.7" target="_blank" rel='noreferrer'><Facebook /></a>
+                <a href="https://www.linkedin.com/in/maciej-walecki-51b76a1b7/" target="_blank" rel='noreferrer'><Linkedin /></a>
+                <a href="https://github.com/maciekw129" target="_blank" rel='noreferrer'><Github /></a>
             </MediaIcons>
         </HeaderContainer>
     )
