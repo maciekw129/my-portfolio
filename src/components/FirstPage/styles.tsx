@@ -15,8 +15,13 @@ export const Logo = styled.h2`
 export const AnimationContainer = styled.div`
 
     @keyframes spin {
-    from {transform: rotate(0);}
-    to {transform: rotate(-180deg)}
+        from {transform: rotate(0);}
+        to {transform: rotate(-180deg);}
+    }
+
+    @keyframes dissapear {
+        from {opacity: 100%;}
+        to {opacity: 0%;}
     }
 
     width: 100%;
@@ -24,6 +29,8 @@ export const AnimationContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: dissapear 1s linear 2s forwards;
+    
 
     .animation {
     position: relative;
@@ -65,7 +72,6 @@ export const AnimationContainer = styled.div`
     .left {
     left: 50%;
     }
-
 
     .mask {
     width: 100%;

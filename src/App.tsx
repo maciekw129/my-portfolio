@@ -8,15 +8,17 @@ import Footer from './components/Footer/Footer';
 import Provider from './utilities/languageContext';
 import FirstPage from './components/FirstPage/FirstPage';
 import AnimationContainer from './components/AnimationContainer/AnimationContainer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
 
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
-  const handleClick = () => {
-    setIsAnimationComplete(!isAnimationComplete);
-  }
+  useEffect(() => {
+    setTimeout(() => {
+      setIsAnimationComplete(!isAnimationComplete);
+    }, 3000)
+  }, [])
 
     return (
       <Provider>
