@@ -9,6 +9,7 @@ import Button from '../Button/Button';
 import { useEffect, useState, useContext } from 'react';
 import ScrollArrow from '../ScrollArrow/ScrollArrow';
 import { LanguageContext } from '../../utilities/languageContext';
+import MyCV from '../../files/MaciejWalecki.pdf';
 
 const Hero = () => {
 
@@ -26,7 +27,7 @@ const Hero = () => {
             <HeroContent>
                 <HeroHeader>{language.heroHeader}</HeroHeader>
                 <Text>{language.heroText}</Text>
-                <Button>{language.cvButton}</Button>
+                <a href={MyCV} download><Button>{language.cvButton}</Button></a>
                 <Arrow isScrollTop={isScrollTop} />
                 <ScrollArrow isScrollTop={isScrollTop} />
             </HeroContent>
