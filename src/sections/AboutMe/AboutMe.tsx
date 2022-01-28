@@ -5,9 +5,9 @@ import {
     ListTitle,
     Photo,
 } from './styles';
-import SectionTitle from '../SectionTitle/SectionTitle';
+import SectionTitle from './../../components/SectionTitle/SectionTitle';
 import AboutMePhoto from '../../images/AboutMePhoto.jpg';
-import SkillsIcons from '../SkillsIcons/SkillsIcons';
+import SkillsIcons from '../../components/SkillsIcons/SkillsIcons';
 import { LanguageContext } from '../../utilities/languageContext'
 import { useContext } from 'react';
 

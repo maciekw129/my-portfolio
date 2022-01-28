@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div<{isVisible: boolean}>`
     opacity: ${({isVisible}) => isVisible ? '100%' : '0%'};
 
     @media only screen and (min-width: 750px) {
-        width: 60%;
+        width: 45%;
     }
 `;
 

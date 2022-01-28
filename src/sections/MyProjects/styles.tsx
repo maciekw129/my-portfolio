@@ -9,6 +9,10 @@ export const MyProjectsContainer = styled.div`
     padding: 0 1rem;
     margin-bottom: 10rem;
 
+    & p {
+        width: 100%;
+    }
+
     @media only screen and (min-width: 450px) {
         padding: 0 3rem;
     }

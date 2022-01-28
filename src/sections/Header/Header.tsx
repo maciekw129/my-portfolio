@@ -3,7 +3,7 @@ import {
     MediaIcons,
 } from './styles';
 import { useState, useEffect } from 'react';
-import LanguageButton from '../LanguageButton/LanguageButton';
+import LanguageButton from '../../components/LanguageButton/LanguageButton';
 import { Facebook } from '@styled-icons/bootstrap/Facebook';
 import { Linkedin } from '@styled-icons/bootstrap/Linkedin';
 import { Github } from '@styled-icons/bootstrap/Github';

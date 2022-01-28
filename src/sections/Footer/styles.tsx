@@ -6,11 +6,12 @@ export const FooterContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #8E8E8E;
+    background-color: #ffffffca;
     padding: 1rem 0;
     
-    & h5 {
+    & p {
         color: black;
+        font-weight: bold;
     }
 `;
 

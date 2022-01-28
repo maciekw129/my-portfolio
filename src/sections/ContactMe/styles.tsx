@@ -8,6 +8,10 @@ export const ContactMeContainer = styled.div`
     justify-content: center;
     padding: 0 10%;
 
+    & p {
+        text-align: center;
+    }
+
     @media only screen and (min-width: 750px) {
         min-height: 100vh;
         padding: 0 35%;
@@ -27,7 +31,11 @@ export const InputEmail = styled.input`
     border-radius: 50px;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
-    width: 125%;
+    width: 300px;
+
+    @media only screen and (max-width: 300px) {
+        width: 200px;
+    }
 `;
 
 export const InputText = styled.textarea`
@@ -36,6 +44,19 @@ export const InputText = styled.textarea`
     border-radius: 5px;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
-    width: 125%;
+    width: 300px;
     resize: none;
+    color: #ffffff;
+
+    @media only screen and (max-width: 300px) {
+        width: 200px;
+    }
 `;
+
+export const TextContainer = styled.div`
+    min-height: 3rem;
+`;
+
+export const Text = styled.p<{textColor: string}>`
+    color: ${({textColor}) => textColor};
+`

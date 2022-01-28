@@ -5,9 +5,9 @@ import {
     Text,
     Arrow,
 } from './styles';
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 import { useEffect, useState, useContext } from 'react';
-import ScrollArrow from '../ScrollArrow/ScrollArrow';
+import ScrollArrow from '../../components/ScrollArrow/ScrollArrow';
 import { LanguageContext } from '../../utilities/languageContext';
 import MyCV from '../../files/MaciejWalecki.pdf';
 

@@ -4,9 +4,9 @@ import {
     ProjectsList,
     ProjectItem,
 } from './styles';
-import SectionTitle from '../SectionTitle/SectionTitle';
+import SectionTitle from './../../components/SectionTitle/SectionTitle';
 import projects from '../../utilities/projects';
-import Project from '../Project/Project';
+import Project from './../../components/Project/Project';
 import { useRef, useState, useEffect, useContext } from 'react';
 import { LanguageContext } from '../../utilities/languageContext';
 
@@ -43,6 +43,7 @@ const MyProjects = () => {
     return(
         <MyProjectsContainer>
                 <SectionTitle align='left'><span>2. </span>{language.myProjectsHeader}</SectionTitle>
+                <p>{language.myProjectsText}</p>
                 <Content>
                     <ProjectsList ref={projectsRef}>
                         <ProjectItem onClick={() => setProjectNumber(0)}><span></span>Cocktail App</ProjectItem>
