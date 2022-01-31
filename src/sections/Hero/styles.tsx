@@ -35,6 +35,12 @@ export const Text = styled.p`
 `;
 
 export const Arrow = styled(ArrowDown)<{ isScrollTop: boolean }>`
+    @keyframes move {
+        0% {bottom: 6rem;}
+        50% {bottom: 3rem;}
+        100% {bottom: 6rem;}
+    }
+
     position: absolute;
     right: 50%;
     bottom: 6rem;
@@ -42,4 +48,5 @@ export const Arrow = styled(ArrowDown)<{ isScrollTop: boolean }>`
     height: 1.5rem;
     opacity: ${({ isScrollTop }) => isScrollTop ? '100%' : '0%'};
     transition: opacity 0.5s linear;
+    animation: move 1s linear 10s;
 `;

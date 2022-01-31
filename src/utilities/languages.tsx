@@ -7,7 +7,7 @@ const languages = {
         aboutMeText: `I'm 22 years old student of gastronomy and hotel managment from Warsaw (Poland). Because of the gastronomy lockdown due to the covid-19 pandemic I decided to change my carrier path and try myself in coding.`,
         skillsText: 'In that time I learned this technologies:',
         myProjectsHeader: 'My projects',
-        myProjectsText: 'Here are some of the projects I made while I was learning to code.',
+        myProjectsText: 'There are some of the projects I made while I was learning to code.',
         rockPaperScissorsDescription: 'This app is the copy od classic rock, paper and scissors game.',
         cocktailsAppDescription: 'App where You can search for a specific cocktail, and check its recipe.',
         contactMeHeader: 'Contact me!',
